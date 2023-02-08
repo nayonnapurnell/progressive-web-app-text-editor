@@ -25,18 +25,6 @@ warmStrategyCache({
   strategy: pageCache,
 });
 
-//registerRoute(({ request }) => request.mode === 'navigate', pageCache);
-
-// TODO: Implement asset caching
-// registerRoute();
-
-// const urlsToCache = ["/", "app.js", "style.css", "logo.png"];
-// self.addEventListener("install", (event) => {
-//    event.waitUntil(async () => {
-//       const cache = await caches.open("pwa-assets");
-//       return cache.addAll(urlsToCache);
-//    });
-// });
 
 registerRoute(
   // Here we define the callback function that will filter the requests we want to cache (in this case, JS and CSS files)
